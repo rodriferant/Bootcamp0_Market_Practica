@@ -1,6 +1,10 @@
 package com.sales.market.model;
 
-import jakarta.persistence.*;
+//import jakarta.persistence.*;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.OneToMany;
 
 import java.util.List;
 @Entity
@@ -10,7 +14,10 @@ public class Employee extends ModelBase{
     private String lastName;
     private Byte[] image;
 
-    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
+    // por defecto en fields es EAGER y en collecciones es LAZY  ytodo valor booleano es true
+    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REMOVE})
+    // mapped by employee es el nombre de la variable en Contrato copprespondiente a el field Employee
+
     private List<Contract> contracts;
 
     public String getFirstName() {

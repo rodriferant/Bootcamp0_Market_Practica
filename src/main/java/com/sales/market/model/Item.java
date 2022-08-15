@@ -11,6 +11,7 @@ public class Item extends ModelBase{
     @OneToOne(targetEntity = SubCategory.class)
     private SubCategory subCategory;
 
+
     public String getName() {
         return name;
     }
