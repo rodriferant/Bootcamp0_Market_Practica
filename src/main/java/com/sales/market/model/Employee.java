@@ -1,17 +1,12 @@
-/**
- * @author: Edson A. Terceros T.
- */
-
 package com.sales.market.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.OneToMany;
-import java.util.List;
+import jakarta.persistence.*;
 
+import java.util.List;
 @Entity
-public class Employee extends ModelBase {
+public class Employee extends ModelBase{
+
+
     private String firstName;
     private String lastName;
     private Byte[] image;
@@ -50,4 +45,5 @@ public class Employee extends ModelBase {
     public void setContracts(List<Contract> contracts) {
         this.contracts = contracts;
     }
+
 }

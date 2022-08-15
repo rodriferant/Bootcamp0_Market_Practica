@@ -1,24 +1,24 @@
-/**
- * @author: Edson A. Terceros T.
- */
 
 package com.sales.market.model;
 
+import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
-import jakarta.persistence.*;
+
 import java.util.Date;
 
 @MappedSuperclass
 public class ModelBase {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+
+    private Long Id;
 
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(nullable = false, updatable = false)
+    @Column( nullable = false, updatable = false)
+
     private Date createdOn;
 
     @LastModifiedDate
@@ -31,11 +31,13 @@ public class ModelBase {
     private long version;
 
     public Long getId() {
-        return id;
+
+        return Id;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        Id = id;
+
     }
 
     public Date getCreatedOn() {

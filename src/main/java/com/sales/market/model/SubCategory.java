@@ -1,15 +1,15 @@
-/**
- * @author: Edson A. Terceros T.
- */
-
 package com.sales.market.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
 
 @Entity
-public class SubCategory extends ModelBase {
+public class SubCategory extends ModelBase{
     private String name;
     private String code;
+    @OneToOne(optional = false)
+    private Category category;
+
 
     public String getName() {
         return name;
@@ -26,4 +26,13 @@ public class SubCategory extends ModelBase {
     public void setCode(String code) {
         this.code = code;
     }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
 }

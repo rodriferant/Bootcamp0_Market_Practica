@@ -1,14 +1,11 @@
-/**
- * @author: Edson A. Terceros T.
- */
-
 package com.sales.market.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
 
 @Entity
-public class Item extends ModelBase {
+public class Item extends ModelBase{
+
     private String name;
     private String code;
     private Byte[] image;

@@ -1,0 +1,9 @@
+Crear un paquete llamado model para las clases de la capa de modelo.
+Crear la clase Position con el atributo name.
+Crear la clase Employee con los atributos firstName, lastName ambos tipo String, image de tipo Byte[] y una colección de Contract contracts.
+Crear la clase Contract con los atributos employee tipo Employee, position tipo Position, initDate, endDate tipo Date.
+Crear la clase Category con el atributo name y code tipo String.
+Crear la clase SubCategory con el atributo name y code tipo String y category tipo Category.
+Crear la clase Item con el atributo name y code tipo String, image de tipo Byte[] y subcategory tipo SubCategory.
+
+ESTAMOS EN 1:54
