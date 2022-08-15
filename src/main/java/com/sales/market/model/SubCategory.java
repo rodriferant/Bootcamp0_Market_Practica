@@ -10,6 +10,7 @@ public class SubCategory extends ModelBase{
     @OneToOne(optional = false)
     private Category category;
 
+
     public String getName() {
         return name;
     }
@@ -33,4 +34,5 @@ public class SubCategory extends ModelBase{
     public void setCategory(Category category) {
         this.category = category;
     }
+
 }

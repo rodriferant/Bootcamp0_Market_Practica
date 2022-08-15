@@ -1,9 +1,11 @@
+
 package com.sales.market.model;
 
 import jakarta.persistence.Entity;
 
 @Entity
 public class Category extends ModelBase{
+
     private String name;
     private String code;
 

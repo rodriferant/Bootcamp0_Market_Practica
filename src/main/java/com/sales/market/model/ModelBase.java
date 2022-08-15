@@ -1,8 +1,10 @@
+
 package com.sales.market.model;
 
 import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+
 
 import java.util.Date;
 
@@ -10,11 +12,13 @@ import java.util.Date;
 public class ModelBase {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long Id;
 
     @CreatedDate
     @Temporal(TemporalType.TIMESTAMP)
     @Column( nullable = false, updatable = false)
+
     private Date createdOn;
 
     @LastModifiedDate
@@ -27,11 +31,13 @@ public class ModelBase {
     private long version;
 
     public Long getId() {
+
         return Id;
     }
 
     public void setId(Long id) {
         Id = id;
+
     }
 
     public Date getCreatedOn() {

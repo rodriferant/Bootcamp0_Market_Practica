@@ -6,6 +6,7 @@ import java.util.List;
 @Entity
 public class Employee extends ModelBase{
 
+
     private String firstName;
     private String lastName;
     private Byte[] image;
@@ -44,6 +45,5 @@ public class Employee extends ModelBase{
     public void setContracts(List<Contract> contracts) {
         this.contracts = contracts;
     }
-
 
 }

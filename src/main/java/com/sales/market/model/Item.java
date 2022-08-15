@@ -5,6 +5,7 @@ import jakarta.persistence.OneToOne;
 
 @Entity
 public class Item extends ModelBase{
+
     private String name;
     private String code;
     private Byte[] image;
