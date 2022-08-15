@@ -1,9 +1,14 @@
 package com.sales.market.model;
 
-import java.util.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
 
-public class Contract {
+import java.util.Date;
+@Entity
+public class Contract extends ModelBase{
+    @OneToOne(optional = false)
     private Employee employee;
+    @OneToOne(optional = false)
     private Position position;
     private Date initDate;
     private Date endDate;

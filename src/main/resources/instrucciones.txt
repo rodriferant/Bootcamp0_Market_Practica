@@ -5,3 +5,5 @@ Crear la clase Contract con los atributos employee tipo Employee, position tipo 
 Crear la clase Category con el atributo name y code tipo String.
 Crear la clase SubCategory con el atributo name y code tipo String y category tipo Category.
 Crear la clase Item con el atributo name y code tipo String, image de tipo Byte[] y subcategory tipo SubCategory.
+
+ESTAMOS EN 1:54

@@ -1,12 +1,16 @@
 package com.sales.market.model;
 
-import java.util.List;
+import jakarta.persistence.*;
 
-public class Employee {
+import java.util.List;
+@Entity
+public class Employee extends ModelBase{
 
     private String firstName;
     private String lastName;
     private Byte[] image;
+
+    @OneToMany(mappedBy = "employee", fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     private List<Contract> contracts;
 
     public String getFirstName() {
@@ -40,4 +44,6 @@ public class Employee {
     public void setContracts(List<Contract> contracts) {
         this.contracts = contracts;
     }
+
+
 }
