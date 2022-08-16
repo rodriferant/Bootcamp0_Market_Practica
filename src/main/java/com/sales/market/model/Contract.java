@@ -19,6 +19,14 @@ public class Contract extends ModelBase{
         return employee;
     }
 
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
     public void setEmployee(Employee employee) {
         this.employee = employee;
     }
@@ -45,14 +53,5 @@ public class Contract extends ModelBase{
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
-    }
-
-
-    public boolean isActive() {
-        return isActive;
-    }
-
-    public void setActive(boolean active) {
-        isActive = active;
     }
 }

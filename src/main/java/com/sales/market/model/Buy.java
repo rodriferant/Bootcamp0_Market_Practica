@@ -7,14 +7,14 @@ import java.math.BigDecimal;
 
 @Entity
 public class Buy extends ModelBase{
-    @Column(precision = 10, scale = 5)
-    private BigDecimal value;
 
-    public BigDecimal getValue() {
-        return value;
+    @Column (precision = 10,scale = 5)
+    private BigDecimal valor;
+
+    public BigDecimal getValor() {
+        return valor;
     }
-
-    public void setValue(BigDecimal value) {
-        this.value = value;
+    public void setValor(BigDecimal valor) {
+        this.valor = valor;
     }
 }
