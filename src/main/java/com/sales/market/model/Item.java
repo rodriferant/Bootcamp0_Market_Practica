@@ -11,6 +11,10 @@ public class Item extends ModelBase{
     private Byte[] image;
     @OneToOne(targetEntity = SubCategory.class)
     private SubCategory subCategory;
+    @OneToOne(targetEntity = SubCategory.class)
+    private SubCategory subCategorySt2;
+
+
 
     public String getName() {
         return name;
